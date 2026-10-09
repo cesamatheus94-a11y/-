@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090608">
+  <meta name="description" content="Um pedacinho do meu coração, feito especialmente para você.">
+  <title>Você, eu e tudo que sinto ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="reading-progress" aria-hidden="true">
+    <div id="progressBar"></div>
+  </div>
+
+  <div class="ambient-hearts" id="ambientHearts" aria-hidden="true"></div>
+
+  <audio id="music" loop preload="metadata">
+    <source src="Jorge &amp; Mateus - A Hora é Agora - [DVD Ao Vivo em Jurerê] - (Clipe Oficial) - Jorge &amp; Mateus Oficial (1).mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-button" id="musicButton" type="button"
+    aria-label="Tocar música">
+    <span class="music-disc" id="musicIcon">♫</span>
+    <span id="musicLabel">nossa música</span>
+  </button>
+
+  <p class="music-message" id="musicMessage" role="status" aria-live="polite"></p>
+
+  <!-- ABERTURA -->
+  <div class="opening" id="opening">
+    <div class="opening-glow"></div>
+
+    <div class="opening-content">
+      <span class="opening-eyebrow">FEITO COM AMOR, PARA VOCÊ</span>
+      <div class="opening-heart" aria-hidden="true">♥</div>
+
+     
+
+      <h1>
+        Tem coisas que<br>
+        eu nunca consigo<br>
+        <em>te explicar direito.</em>
+      </h1>
+
+     
+
+      <button class="primary-button" id="enterButton" type="button">
+        olha amorzao <span>♥</span>
+      </button>
+
+
+    </div>
+  </div>
+
+  <main>
+    <!-- CAPA -->
+    <section class="hero section-shell" id="top">
+      <div class="hero-copy reveal">
+        <span class="eyebrow"><span class="eyebrow-line"></span> pra você amorzão</span>
+
+        <h1>
+          Se meu coração<br>
+          soubesse escrever,<br>
+          <em>escreveria você.</em>
+        </h1>
+
+        <p class="hero-description">
+          Eu poderia passar horas tentando encontrar as palavras certas,
+          mas parece que nenhuma delas consegue explicar tudo o que eu sinto
+          por você. Então fiz esse cantinho para guardar um pouquinho
+          do amor que existe aqui dentro.
+        </p>
+
+        <a class="text-link" href="#carta">
+          tem algo que quero te dizer <span>↓</span>
+        </a>
+
+        <div class="hero-signature">
+          <span class="signature-heart">♥</span>
+      
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-photo-frame">
+          <div class="photo-index">01 <span>/</span> MEU LUGAR FAVORITO</div>
+          <img src="linda meu amor.jpeg" alt="A mulher que eu amo">
+          <div class="hero-photo-caption">
+            <span>minha pessoa favorita</span>
+            <span class="caption-heart">♥</span>
+          </div>
+        </div>
+        <span class="hero-side-note">um amor que eu quero cuidar.</span>
+        <span class="decorative-star star-one">✳</span>
+        <span class="decorative-star star-two">✳</span>
+      </div>
+
+      <a class="scroll-indicator" href="#tempo" aria-label="Rolar para baixo">
+    
+      </a>
+    </section>
+
+    <!-- NOSSO TEMPO -->
+    <section class="counter-section section-shell" id="tempo">
+      <div class="section-heading reveal">
+        <span class="eyebrow">O TEMPO COM VOCÊ</span>
+        <h2>Desde que você chegou,<br><em>tudo tem mais sentido.</em></h2>
+        <p>nós, desde 15 de julho de 2026</p>
+      </div>
+
+      <div class="counter-card reveal">
+        <div class="counter-topline">
+          <span>O NOSSO TEMPO</span>
+          <span class="counter-heart">♥</span>
+        </div>
+
+        <div class="counter-grid">
+          <div class="counter-unit">
+            <strong id="days">0</strong>
+            <span>dias</span>
+          </div>
+          <div class="counter-separator">:</div>
+          <div class="counter-unit">
+            <strong id="hours">00</strong>
+            <span>horas</span>
+          </div>
+          <div class="counter-separator">:</div>
+          <div class="counter-unit">
+            <strong id="minutes">00</strong>
+            <span>minutos</span>
+          </div>
+          <div class="counter-separator">:</div>
+          <div class="counter-unit">
+            <strong id="seconds">00</strong>
+            <span>segundos</span>
+          </div>
+        </div>
+
+        <div class="counter-bottomline">
+          <span>cada segundo vale a pena</span>
+          <span>♥</span>
+        </div>
+      </div>
+
+      <p class="counter-footnote reveal">
+        e ainda tem tanta vida que eu quero viver com você. ❤️
+      </p>
+    </section>
+
+    <!-- DECLARAÇÃO -->
+    <section class="confession-section section-shell">
+      <div class="confession-mark reveal">“</div>
+
+      <div class="confession-copy reveal">
+        <span class="eyebrow">UMA COISA QUE VOCÊ PRECISA SABER</span>
+
+        <h2>
+          Você virou um dos motivos<br>
+          <em>mais bonitos dos meus sorrisos.</em>
+        </h2>
+
+        <p>
+          Às vezes eu me pego sorrindo sozinho, lembrando de alguma coisa
+          que você falou, de alguma risada nossa ou de um momento simples
+          que acabou se tornando especial só porque você estava nele.
+        </p>
+
+        <p>
+          É engraçado como alguém pode chegar e transformar tanta coisa.
+          Você faz parte dos meus pensamentos, das minhas lembranças favoritas
+          e de muitos dos sonhos que eu quero realizar daqui para frente.
+        </p>
+
+        <span class="confession-signature">e essa pessoa é você, amor. ♥</span>
+      </div>
+    </section>
+
+    <!-- CONEXÃO -->
+    <section class="connection-section section-shell">
+      <div class="connection-photo reveal">
+        <img src="amor.jpeg" alt="Um momento especial nosso" loading="lazy">
+        <span class="photo-stamp">MEU ABRIGO ♥</span>
+      </div>
+
+      <div class="connection-copy reveal">
+        <span class="eyebrow">O QUE EU SINTO AO SEU LADO</span>
+
+        <h2>
+          Tem uma paz no seu abraço que eu não encontro em outro lugar.
+        </h2>
+
+        <p>
+          Seu abraço tem aquele jeitinho de fazer o mundo ficar um pouco
+          mais leve. É como se, por alguns instantes, eu pudesse esquecer
+          a correria de tudo e simplesmente aproveitar estar com você.
+        </p>
+
+        <p>
+          Eu amo nossas risadas, nossas conversas e até aqueles momentos
+          em que a gente não precisa fazer nada extraordinário para ser feliz.
+          Só estar junto já faz tudo valer a pena.
+        </p>
+
+        <p>
+          Quero ser alguém que te traga paz, que respeite seu espaço,
+          que entenda seus momentos e que faça você se sentir amada
+          sem nunca precisar deixar de ser quem você é.
+        </p>
+
+        <div class="little-note">
+          <span>♥</span>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- PEQUENOS MOMENTOS -->
+    <section class="moments-section section-shell">
+      <div class="section-heading reveal">
+        <span class="eyebrow">COISAS QUE EU GUARDO COM CARINHO</span>
+        <h2>O amor também mora<br><em>nas pequenas coisas.</em></h2>
+        <p>e são essas pequenas coisas que fazem tudo ser tão nosso.</p>
+      </div>
+
+      <div class="moments-grid">
+        <article class="moment-card reveal">
+        
+          <span class="moment-icon">♡</span>
+          <h3>As nossas risadas</h3>
+          <p>Principalmente aquelas em que a gente ri de qualquer besteira e nem consegue explicar o motivo.</p>
+        </article>
+
+        <article class="moment-card reveal">
+          
+          <span class="moment-icon">✧</span>
+          <h3>O seu abraço</h3>
+          <p>Um daqueles lugares em que eu queria poder ficar mais um pouquinho toda vez.</p>
+        </article>
+
+        <article class="moment-card reveal">
+         
+          <span class="moment-icon">♥</span>
+          <h3>O seu sorriso</h3>
+          <p>Uma das coisas mais bonitas que eu tenho a sorte de ver de pertinho.</p>
+        </article>
+
+        <article class="moment-card reveal">
+
+          <span class="moment-icon">∞</span>
+          <h3>Até a saudade</h3>
+          <p>Porque ela me lembra o quanto a sua presença faz diferença nos meus dias.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="gallery-section section-shell" id="lembrancas">
+      <div class="section-heading reveal">
+        <span class="eyebrow">PEDACINHOS DA NOSSA HISTÓRIA</span>
+        <h2>Se eu pudesse guardar<br><em>o tempo em fotografias...</em></h2>
+        <p>alguns dos pedacinhos mais bonitos da minha vida.</p>
+      </div>
+
+      <div class="photo-gallery">
+        <figure class="gallery-item gallery-tall reveal">
+          <img src="que mulher.jpeg" alt="Uma mulher maravilhosa" loading="lazy">
+          <figcaption>
+            
+            <span>que mulher, meu Deus. ♥</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal">
+          <img src="julia e eu.jpeg" alt="Nós dois juntos" loading="lazy">
+          <figcaption>
+            
+            <span>meu lugar é com você</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal">
+          <img src="linda meu amor.jpeg" alt="Meu amor" loading="lazy">
+          <figcaption>
+          
+            <span>minha menina linda</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal">
+          <img src="começode tudo.jpeg" alt="O começo da nossa história" loading="lazy">
+          <figcaption>
+            
+            <span>o começo de algo tão bonito</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item gallery-wide reveal">
+          <img src="amorzao e eu.jpeg" alt="Um registro nosso" loading="lazy">
+          <figcaption>
+            
+            <span>uma lembrança para levar no coração</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- VÍDEO: FORA DA GRADE DE FOTOS -->
+      <div class="video-memoria reveal">
+        <div class="video-legenda">
+          <span class="video-detalhe">♥ UM PEDACINHO DA NOSSA HISTÓRIA</span>
+          <h3>Uma lembrança que eu quero guardar pra sempre</h3>
+          <p>
+            Se eu pudesse guardar alguns segundos da minha vida
+            em um lugar onde o tempo nunca passa, seriam momentos
+            assim, com você. Porque estar ao seu lado transforma
+            até as coisas mais simples em lembranças que eu quero
+            levar comigo para sempre que dia bom akkaaka te amo mo. ❤️
+          </p>
+        </div>
+
+        <div class="video-moldura">
+          <video controls playsinline preload="metadata" poster="sempre nos.jpeg">
+            <source src="nos dois.mp4" type="video/mp4">
+            Seu navegador não conseguiu reproduzir este vídeo.
+          </video>
+        </div>
+
+        <span class="video-assinatura">
+          um momento nosso, guardado amorzão sempre que vejo fico rindo
+          e vendo o qual feliz eu sou do seu lado meu amor.
+        </span>
+      </div>
+    </section>
+
+    <!-- SEU OLHAR -->
+    <section class="admiration-section section-shell">
+      <div class="admiration-copy reveal">
+        <span class="eyebrow">UMA DAS MINHAS COISAS FAVORITAS</span>
+
+        <h2>
+          Eu poderia me perder<br>
+          <em>no seu olhar.</em>
+        </h2>
+
+        <p>
+          Tem alguma coisa no seu olhar que me prende de um jeito bonito.
+          Às vezes eu só quero ficar olhando para você e pensando na sorte
+          que é ter alguém tão especial fazendo parte da minha vida.
+        </p>
+
+        <p>
+          E não é só pela sua beleza. É pelo seu jeitinho, pelas suas manias,
+          pela sua risada, pela sua forma de ser e por tudo aquilo que faz
+          de você a pessoa que eu amo.
+        </p>
+
+        <span class="handwritten">você é linda por inteiro, amor. ♥</span>
+      </div>
+
+      <div class="admiration-photo reveal">
+        <img src="seu olhar.jpeg" alt="O olhar que eu amo" loading="lazy">
+        <span class="admiration-caption">seu olhar, meu ponto fraco</span>
+      </div>
+    </section>
+
+    <!-- VULNERABILIDADE -->
+    <section class="vulnerability-section section-shell">
+      <div class="vulnerability-inner reveal">
+        
+
+        <div class="vulnerability-heart">♥</div>
+
+        <h2>
+          Eu tenho medo de te perder.<br>
+          <em>Porque você e muito importante pra mim meu amor</em>
+        </h2>
+
+        <p>
+          Não porque eu queira prender você, mas porque o que a gente tem
+          significa muito para mim. Eu sei que amar também é respeitar,
+          conversar, aprender e cuidar um do outro mesmo nos dias difíceis.
+        </p>
+
+        <p>
+          Quero continuar aprendendo a te amar do jeito que você merece,
+          reconhecendo meus erros, valorizando sua presença e mostrando
+          com atitudes que você pode contar comigo.
+        </p>
+
+        <span class="vulnerability-signature">eu escolho cuidar do nosso amor. ❤️</span>
+      </div>
+    </section>
+
+    <!-- FUTURO -->
+    <section class="future-section section-shell">
+      <div class="future-ornament reveal">∞</div>
+
+      <div class="future-copy reveal">
+        <span class="eyebrow">AINDA TEM TANTA COISA PELA FRENTE</span>
+
+        <h2>
+          Meu sonho não é viver<br>
+          <em>uma vida perfeita.</em>
+        </h2>
+
+        <p>
+          Meu sonho é viver uma vida real com você. Com dias bons,
+          desafios, conquistas, planos que dão certo e outros que a gente
+          vai precisar refazer juntos.
+        </p>
+
+        <p>
+          Quero comemorar suas vitórias, apoiar seus sonhos, conhecer
+          lugares ao seu lado, construir nossas lembranças e, quem sabe,
+          um dia olhar para trás e perceber quanta coisa bonita vivemos.
+        </p>
+
+        <p>
+          Eu penso no nosso futuro com carinho, inclusive na possibilidade
+          de construir uma família com você. Não preciso saber todos os
+          detalhes de como vai ser. Só quero continuar caminhando com amor,
+          respeito e vontade de fazer dar certo.
+        </p>
+
+        <div class="future-promise">
+          <span>♥</span>
+          <p>que a gente nunca deixe de cuidar daquilo que fez nossos corações se encontrarem.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="letter-section section-shell" id="carta">
+      <div class="section-heading reveal">
+        
+        <h2>ops<br><em>ops.</em></h2>
+      </div>
+
+      <article class="love-letter reveal">
+        <div class="letter-top">
+          <span>PARA VOCÊ, AMOR DA MINHA VIDA</span>
+          <span>♥</span>
+        </div>
+
+        <div class="letter-body">
+          <p class="letter-greeting">Meu amor,</p>
+
+          <p>
+            Eu nem sei direito por onde começar, porque quando o assunto
+            é você, parece que as palavras ficam pequenas demais para
+            explicar o tamanho do que eu sinto.
+          </p>
+
+          <p>
+            Você se tornou alguém muito especial para mim. Eu amo ter você
+            na minha vida, amo nossas conversas, nossas brincadeiras,
+            os momentos que compartilhamos e a felicidade que sinto
+            quando estou ao seu lado.
+          </p>
+
+          <p>
+            Quero que você saiba que não precisa ser perfeita para ser
+            amada por mim. Quero conhecer cada vez mais quem você é,
+            respeitar seus sentimentos, estar perto quando você precisar
+            e também respeitar seus momentos quando quiser ficar no seu canto.
+          </p>
+
+          <p>
+            Eu sei que só palavras não constroem uma história bonita.
+            Por isso, quero demonstrar meu amor nas pequenas atitudes,
+            na sinceridade, no cuidado, na parceria e na vontade de
+            continuar melhorando por nós dois.
+          </p>
+
+          <p>
+            Obrigado por fazer parte da minha vida, por cada lembrança
+            que estamos construindo e por ser essa menina que me faz
+            sorrir até quando estou lembrando de alguma besteira nossa.
+          </p>
+
+          <p>
+            Se um dia você esquecer o quanto é especial, espero que
+            se lembre deste cantinho e de todo o carinho que coloquei
+            em cada detalhe dele.
+          </p>
+
+          <p>
+            Eu quero viver muita coisa com você, meu amor. Quero mais
+            abraços demorados, mais risadas, mais fotografias, mais
+            histórias e mais motivos para agradecer por ter você comigo.
+          </p>
+
+          <p class="letter-final">
+            Eu te amo, minha menina. Hoje, amanhã e em cada novo dia
+            em que eu puder demonstrar esse amor. ❤️
+          </p>
+
+          <p class="letter-signature">
+            Com todo o amor do mundo,<br>
+            <em>seu amor. ♥</em>
+          </p>
+        </div>
+
+        <div class="letter-bottom">
+          
+          <span> ♥</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- SURPRESA FINAL -->
+    <section class="surprise-section section-shell" id="surpresa">
+      <div class="surprise-intro reveal">
+        <span class="eyebrow">A ÚLTIMA SURPRESA</span>
+
+        <div class="surprise-symbol">✧</div>
+
+        <h2>
+          Ainda tem uma<br>
+          <em>coisinha para você.</em>
+        </h2>
+
+      
+        <button class="primary-button surprise-button" id="surpriseButton"
+          type="button" aria-expanded="false" aria-controls="surpriseContent">
+          aqui amorzão <span>♥</span>
+        </button>
+      </div>
+
+      <div class="surprise-content" id="surpriseContent" hidden>
+        <div class="surprise-reveal-heading">
+          <span class="eyebrow">MINHA MENINA FAVORITA</span>
+          <h3>amo você minha fedidinha,<br><em>macaquinha, labubuzinha, fofinha, meu momozinho.</em></h3>
+          <p>e eu não trocaria nossas besteiras por nada nesse mundo. ❤️</p>
+        </div>
+
+        <div class="surprise-gallery">
+          <figure>
+            <img src="amor.jpeg" alt="Um momento nosso" loading="lazy">
+            <figcaption>meu amorzinho ♥</figcaption>
+          </figure>
+
+          <figure>
+            <img src="linda meu amor.jpeg" alt="Minha menina linda" loading="lazy">
+            <figcaption>olha a mulher da minha vida</figcaption>
+          </figure>
+
+          <figure>
+            <img src="bobos akkaka.jpeg" alt="Nós sendo bobos juntos" loading="lazy">
+            <figcaption>dois bobos que se amam akkakakakak</figcaption>
+          </figure>
+        </div>
+
+        <div class="surprise-declaration">
+          <span class="declaration-heart">♥</span>
+
+          <p>
+            Se eu pudesse escolher de novo, sabendo de tudo o que ainda
+            vamos viver, eu escolheria conhecer você, viver nossas
+            maluquices, construir nossas lembranças e descobrir cada
+            vez mais motivos para me apaixonar por você.
+          </p>
+
+          <p>
+            Obrigado por ser meu amor, minha companheira de risadas
+            e uma das partes mais bonitas da minha vida.
+          </p>
+
+          <h3>eu amo você, amorzão. muito, muito mesmo. ❤️</h3>
+
+          <button class="close-surprise" id="closeSurprise" type="button">
+            voltar para a cartinha ↑
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-heart">♥</div>
+    <h2>Você é uma das minhas<br><em>partes favoritas da vida.</em></h2>
+    
+    <a href="#top" class="footer-link">voltar ao começo ↑</a>
+    <span class="footer-copyright">VOCÊ + EU · NOSSA HISTÓRIA</span>
+  </footer>
+</body>
+</html>
